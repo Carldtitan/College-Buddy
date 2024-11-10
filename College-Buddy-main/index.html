@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Budget Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Page -->
+  <div id="login-page" class="login-container">
+    <h2>Welcome to College Budget Buddy</h2>
+    <form id="login-form">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Main App Container -->
+  <div id="app" class="hidden">
+
+    <!-- Header -->
+    <header>
+      <h1>College Budget Buddy</h1>
+      <p>Track your expenses and manage your budget with ease!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#expenses">Track Expenses</a></li>
+        <li><a href="#budget">Set Budget</a></li>
+        <li><a href="#goals">Financial Goals</a></li>
+        <li><a href="#reports">Reports</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div id="budget-summary">
+        <p>Total Budget: $<span id="total-budget">0</span></p>
+        <p>Total Expenses: $<span id="total-expenses">0</span></p>
+        <p>Remaining Balance: $<span id="remaining-balance">0</span></p>
+      </div>
+    </section>
+
+    <!-- Budget Planner Section -->
+    <section id="budget">
+      <h2>Set Budget</h2>
+      <form id="budget-form">
+        <label for="budget-amount">Monthly Budget:</label>
+        <input type="number" id="budget-amount" required>
+        <button type="submit">Set Budget</button>
+      </form>
+    </section>
+
+    <!-- Expenses Tracker Section -->
+    <section id="expenses">
+      <h2>Track Expenses</h2>
+      <form id="expense-form">
+        <label for="expense-amount">Amount:</label>
+        <input type="number" id="expense-amount" required>
+        <label for="expense-category">Category:</label>
+        <select id="expense-category">
+          <option value="Food">Food</option>
+          <option value="Rent">Rent</option>
+          <option value="Books">Books</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit">Add Expense</button>
+      </form>
+      <div id="expense-list"></div>
+    </section>
+
+    <!-- Financial Goals Section -->
+    <section id="goals">
+      <h2>Financial Goals</h2>
+      <form id="goal-form">
+        <label for="goal-amount">Goal Amount:</label>
+        <input type="number" id="goal-amount" required>
+        <label for="goal-name">Goal Name:</label>
+        <input type="text" id="goal-name" required>
+        <button type="submit">Set Goal</button>
+      </form>
+      <div id="goal-list"></div>
+    </section>
+
+    <!-- Reports Section -->
+    <section id="reports">
+      <h2>Reports and Insights</h2>
+      <div id="report-summary">
+        <!-- Placeholder for dynamically generated reports -->
+      </div>
+    </section>
+
+  </div>
+  <!-- Income Tracker Section -->
+  <section id="income">
+    <h2>Income Tracker</h2>
+    <form id="income-form">
+      <label for="income-amount">Income Amount:</label>
+      <input type="number" id="income-amount" required>
+      <label for="income-source">Source:</label>
+      <input type="text" id="income-source" required>
+      <button type="submit">Add Income</button>
+    </form>
+    <div id="income-list"></div>
+  </section>
+
+  <!-- Recurring Expenses Section -->
+  <section id="recurring">
+    <h2>Recurring Expenses</h2>
+    <form id="recurring-form">
+      <label for="recurring-amount">Amount:</label>
+      <input type="number" id="recurring-amount" required>
+      <label for="recurring-category">Category:</label>
+      <input type="text" id="recurring-category" required>
+      <button type="submit">Add Recurring Expense</button>
+    </form>
+    <div id="recurring-list"></div>
+  </section>
+
+  <!-- Savings Tracker Section -->
+  <section id="savings">
+    <h2>Savings Tracker</h2>
+    <form id="savings-form">
+      <label for="savings-goal">Goal Amount:</label>
+      <input type="number" id="savings-goal" required>
+      <label for="savings-name">Goal Name:</label>
+      <input type="text" id="savings-name" required>
+      <button type="submit">Add Savings Goal</button>
+    </form>
+    <div id="savings-list"></div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
