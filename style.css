@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Login Page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #007bff;
+  color: white;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form input, #login-form button {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#login-form button {
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Main App Container */
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #007bff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#budget-summary p, #expense-list p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Financial Goals and Reports Section */
+#goal-list p, #report-summary p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+#income-list p, #recurring-list p, #savings-list p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Ensure consistent width for new sections */
+#income, #recurring, #savings, #reports {
+  max-width: 600px; /* Match this width to the Reports and Insights section */
+  margin: 20px auto; /* Center-align the sections */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
